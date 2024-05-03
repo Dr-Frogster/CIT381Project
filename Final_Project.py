@@ -8,10 +8,10 @@ import time
 import smtplib
 
 # Email configurations
-email_provider = "mms.att.net"
-email_address = "doctorfrogster@gmail.com"
-email_password = "H8o15l12y25."
-phone_number = "8593825226"
+email_provider = ""
+email_address = ""
+email_password = ""
+phone_number = ""
 smtp_server = "smtp.gmail.com"
 photo_path = ""
 smtp_port = 587
@@ -34,7 +34,7 @@ def take_picture():
 
 # Email functions similar to sendip
 def send_email(photo_path):
-    if email_provider == "8593825226@txt.att":
+    if email_provider == "":
         print("Please configure your email provider.")
         return
     subject = "Motion Detected!"
